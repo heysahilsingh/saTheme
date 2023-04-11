@@ -1,0 +1,47 @@
+/*
+	Theme Name:			saTheme
+	Description:		saTheme's Custom Theme
+	Theme URI:			https://saTheme.com
+	Author:				Sahil
+	Author URI:			https://saTheme.com
+	Version:			1.1.4
+	Requires at least:	5.8
+	Requires PHP:		7.4
+	Tested up to:		6.0
+	License:			GNU General Public License v3 or later.
+	License URI:		https://www.gnu.org/licenses/gpl-3.0.html
+	Text Domain: 		saTheme
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+@media(min-width: 1201px){
+	:root{--body-padding: 3vw; --section-gap: 8vw;}
+}
+@media only screen and (max-width: 1200px) and (min-width: 765px){
+	:root{--body-padding: 3vw; --section-gap: 10vw;}
+}
+@media(max-width: 764px){
+	:root{--body-padding: 2.5vw; --section-gap: 15vw;}
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: 'Inter', sans-serif; padding: 0 var(--body-padding);}
+img{width: 100%; height: auto; background-color: rgba(0,0,0,0.05);}
+main .elementor{margin-bottom: var(--section-gap); display: flex; flex-direction: column; gap: var(--section-gap);}
+
+.elementor-container, .elementor-row{flex-wrap: wrap !important;}
+.elementor-section .elementor-container, .elementor-widget-wrap {padding: unset !important;}
+.elementor-widget-html{line-height:0;}
+.sa-no-img-bg img{background-color: transparent;}
+.sa-css{display: none !important;}
+.sa-full-width{margin: 0 calc(var(--body-padding) - var(--body-padding) * 2);}
+
+@media(min-width: 1201px){
+	button, input[type="button"], input[type="submit"], .elementor-button{padding: 1vw 1.5vw !important;}
+}
+@media only screen and (max-width: 1200px) and (min-width: 765px){
+	button, input[type="button"], input[type="submit"], .elementor-button{padding: 2vw 3vw !important;}
+}
+@media(max-width: 764px){
+	button, input[type="button"], input[type="submit"], .elementor-button{padding: 4vw 6vw !important;}
+}

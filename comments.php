@@ -56,4 +56,3 @@ comment_form();
 ?>
 
 </section><!-- .comments-area -->
-
